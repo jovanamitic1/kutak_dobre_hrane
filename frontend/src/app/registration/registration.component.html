@@ -1,0 +1,58 @@
+<h1>Registracija</h1>
+
+<div class="registration-form">
+    <h3 color="red">{{errorMessage}}</h3>
+    <form>
+        <label for="name">Ime </label>
+        <input type="text" id="name" name="name" [(ngModel)]="firstname">
+        
+        <br>
+        
+        <label for="lastname">Prezime </label>
+        <input type="text" id="lastname" name="lastname" [(ngModel)]="lastname">
+        <br>
+        <label for="username">Korisnicko ime </label>
+        <input type="text" id="username" name="username" [(ngModel)]="username">
+        <br>
+        <label for="password">Lozinka </label>
+        <input type="password" id="password" name="password" [(ngModel)]="password">
+        
+        <br>
+        
+        <label for="question">Pitanje: </label>
+        <select id="question" name="question" [(ngModel)]="question">
+            <option selected>Izaberite bezbedonosno pitanje</option>
+        </select>
+        <br>
+        <label for="answer">Odgovor</label>
+        <input type="text" id="answer" name="answer" [(ngModel)]="answer">
+        
+        <br>
+        <label for="sex">Pol </label>
+        <select id="sex" name="sex" [(ngModel)]="sex">
+            <option>M</option>
+            <option>Z</option>
+        </select>
+        <br>
+        <label for="address">Adresa </label>
+        <input type="text" id="address" name="address" [(ngModel)]="address">
+        
+        <br>
+        
+        <label for="phone">Broj telefona </label>
+        <input type="text" id="phone" name="phone" [(ngModel)]="phone">
+        
+        <br>
+        
+        <label for="email">I-mejl adresa </label>
+        <input type="text" id="email" name="email" [(ngModel)]="email">
+        
+        <br>
+        
+        <label for="creditcard">Broj kreditne kartice </label>
+        <input type="text" id="creditcard" name="creditcard" [(ngModel)]="creditcard">   
+    
+        <br>
+        <button (click)="registration()">Registruj se</button>
+    </form>
+</div>

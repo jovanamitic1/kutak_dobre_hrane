@@ -1,0 +1,17 @@
+<div class="login-form">
+    <h2>Login Admin</h2>
+    <h3 style="color: red;">{{errorMessage}}</h3>
+    <form>
+       <label for="username">Korisničko ime </label>
+       <input type="text" id="username" name="username" [(ngModel)]="username">
+    
+       <br>
+       
+       <label for="password">Lozinka </label>
+       <input type="password" id="password" name="password" [(ngModel)]="password">
+    
+       <br>
+       <button (click)="login()">Prijavi se</button>
+    </form>
+ </div>
+ 
